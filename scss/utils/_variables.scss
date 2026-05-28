@@ -1,2 +1,28 @@
-$color-primary: blue;
-$color-secondary: yellow;
+/* COLORS */
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+/* BASIC COLORS */
+$color-grey: #353535;
+$color-white: #fff;
+
+
+/* TYPOGRAPHY */
+// FONTS
+$font-primary: "Roboto", sans-serif;
+$font-title: "Shrikhand", cursive;
+// WEIGHT
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+// LINE HEIGHT
+$line-height-base: 1.5;
+
+/* BREAKPOINTS */
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1440px;
+
+/* HEADER SPACING */
+$header-spacing-mobile: 14px;
+$header-spacing-desktop: 30px;

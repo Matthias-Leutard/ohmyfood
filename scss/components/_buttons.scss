@@ -1,0 +1,17 @@
+@use "../utils/variables" as v;
+
+.button-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-back i {
+  font-size: 18px;
+  color: black;
+}

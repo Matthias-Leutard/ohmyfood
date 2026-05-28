@@ -1,0 +1,39 @@
+@use "../utils/variables" as v;
+@use "../utils/mixins" as m;
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  padding: 0 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+
+  & a {
+    display: flex;
+    align-items: center;
+  }
+
+  & img {
+    display: block;
+    width: 200px;
+  }
+}
+
+.header-container {
+  padding-top: v.$header-spacing-mobile;
+  padding-bottom: v.$header-spacing-mobile;
+
+  @include m.respond-to(tablet) {
+    padding-top: v.$header-spacing-desktop;
+    padding-bottom: v.$header-spacing-desktop;
+  }
+}

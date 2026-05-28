@@ -1,5 +1,14 @@
+/* UTILS */
 @use "./utils/variables";
-@use "./components/header";
+@use "./utils/typography";
+/* LAYOUT */
+@use "./layout/header";
+@use "./layout/footer";
+/* BASE */
+@use "./base/layout";
+/* COMPONENTS */
+@use "./components/buttons";
+
 
 * {
   margin: 0;
