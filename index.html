@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
@@ -20,7 +20,130 @@
       </h1>
     </header>
 
-    <main class="container">
+    <main>
+      <section class="location-bar">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Paris, Belleville</span>
+      </section>
+
+      <section class="hero">
+        <div class="container hero-content">
+          <p class="hero-title">
+            Réservez le menu qui vous convient
+          </p>
+          <p class="hero-text">
+            Découvrez des restaurants d’exception, sélectionnés par nos soins.
+          </p>
+          <a href="#" class="button-primary">
+            Explorer nos restaurants
+          </a>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container">
+          <div class="steps-wrapper">
+            <h2 class="steps-title">Fonctionnement</h2>
+            <ol class="steps-list">
+              <li class="steps-item">
+                <span class="steps-number">1</span>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>Choisissez un restaurant</p>
+              </li>
+              <li class="steps-item">
+                <span class="steps-number">2</span>
+                <i class="fa-solid fa-list-ul"></i>
+                <p>Composez votre menu</p>
+              </li>
+              <li class="steps-item steps-item--colored">
+                <span class="steps-number">3</span>
+                <i class="fa-solid fa-store -colored"></i>
+                <p>Dégustez au restaurant</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="restaurants">
+        <div class="container">
+          <div class="restaurants-wrapper">
+            <h2 class="restaurants-title">Restaurants</h2>
+            <ul class="restaurants-list">
+              <li class="restaurant-item">
+                <a href="#" class="restaurant-card">
+                  <div class="restaurant-image">
+                    <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                    <span class="badge">Nouveau</span>
+                  </div>
+                  <div class="restaurant-content">
+                    <div>
+                      <h3>La palette du goût</h3>
+                      <p>Ménilmontant</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="restaurant-item">
+                <a href="#" class="restaurant-card">
+                  <div class="restaurant-image">
+                    <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                    <span class="badge">Nouveau</span>
+                  </div>
+                  <div class="restaurant-content">
+                    <div>
+                      <h3>La note enchantée</h3>
+                      <p>Charonne</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="restaurant-item">
+                <a href="#" class="restaurant-card">
+                  <div class="restaurant-image">
+                    <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                  </div>
+                  <div class="restaurant-content">
+                    <div>
+                      <h3>À la française</h3>
+                      <p>Cité Rouge</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="restaurant-item">
+                <a href="#" class="restaurant-card">
+                  <div class="restaurant-image">
+                    <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                  </div>
+                  <div class="restaurant-content">
+                    <div>
+                      <h3>Le délice des sens</h3>
+                      <p>Folie-Méricourt</p>
+                    </div>
+                    <div class="heart">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer-container">

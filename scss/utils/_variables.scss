@@ -1,11 +1,16 @@
 /* COLORS */
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 
 /* BASIC COLORS */
-$color-grey: #353535;
+$color-green: #1b6150;
+$color-grey-light: #eaeaea;
+$color-grey: #f6f6f6;
+$color-grey-dark-s: #7e7e7e;
+$color-grey-dark: #353535;
 $color-white: #fff;
+$color-black: #000;
 
 
 /* TYPOGRAPHY */
@@ -13,6 +18,7 @@ $color-white: #fff;
 $font-primary: "Roboto", sans-serif;
 $font-title: "Shrikhand", cursive;
 // WEIGHT
+$font-weight-thin: 300;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 // LINE HEIGHT
@@ -26,3 +32,6 @@ $breakpoint-large: 1440px;
 /* HEADER SPACING */
 $header-spacing-mobile: 14px;
 $header-spacing-desktop: 30px;
+
+/* BORDER RADIUS */
+$radius-pill: 25px;

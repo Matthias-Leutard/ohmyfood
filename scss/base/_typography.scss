@@ -1,11 +1,11 @@
-@use "./variables" as v;
+@use "../utils/variables" as v;
 
 /* TEXT DEFAULT */
 body {
   font-family: v.$font-primary;
   line-height: v.$line-height-base;
   font-weight: v.$font-weight-regular;
-  color: #333;
+  color: v.$color-grey-dark;
 }
 
 /* TITLES */

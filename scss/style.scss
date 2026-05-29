@@ -1,17 +1,16 @@
 /* UTILS */
+@use "./utils/mixins";
 @use "./utils/variables";
-@use "./utils/typography";
 /* LAYOUT */
 @use "./layout/header";
+@use "./layout/hero";
 @use "./layout/footer";
+@use "./layout/steps";
 /* BASE */
 @use "./base/layout";
+@use "./base/reset";
+@use "./base/typography";
 /* COMPONENTS */
 @use "./components/buttons";
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "./components/location-bar";
+@use "./components/restaurants";

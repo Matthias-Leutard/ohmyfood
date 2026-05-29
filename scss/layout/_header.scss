@@ -9,6 +9,7 @@
   min-height: 60px;
   padding: 0 16px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: v.$color-white;
 }
 
 .header-logo {
@@ -23,7 +24,6 @@
   }
 
   & img {
-    display: block;
     width: 200px;
   }
 }

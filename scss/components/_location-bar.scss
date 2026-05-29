@@ -1,0 +1,11 @@
+@use "../utils/variables" as v;
+
+.location-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 0;
+  background-color: v.$color-grey-light;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
