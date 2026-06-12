@@ -81,36 +81,46 @@
   }
 }
 
-/* HEART */
 .heart {
   position: relative;
   width: 24px;
   height: 24px;
   cursor: pointer;
-}
 
-.heart i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.2s ease;
-}
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
 
-.heart .fa-regular {
-  opacity: 1;
-}
+  .fa-regular {
+    opacity: 1;
+  }
 
-.heart .fa-solid {
-  opacity: 0;
-  color: v.$color-primary;
-}
+  .fa-solid {
+    opacity: 0;
+    background: linear-gradient(
+      193.33deg,
+      v.$color-primary -11.44%,
+      v.$color-secondary 123.93%
+    );
+    background-clip: text;
+    color: transparent;
+    transform: scale(0.8);
+  }
 
-.heart:hover .fa-regular {
-  opacity: 0;
-}
+  &:hover {
+    .fa-regular {
+      opacity: 0;
+    }
 
-.heart:hover .fa-solid {
-  opacity: 1;
+    .fa-solid {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
 }
 
 @include m.respond-to(desktop) {

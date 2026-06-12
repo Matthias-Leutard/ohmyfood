@@ -1,16 +1,19 @@
+@use "./base/reset";
 /* UTILS */
-@use "./utils/mixins";
 @use "./utils/variables";
+@use "./base/typography";
+@use "./utils/mixins";
+/* COMPONENTS */
+@use "./components/loader";
+@use "./components/buttons";
+@use "./components/location-bar";
+@use "./components/restaurants";
+/* BASE */
+@use "./base/layout";
 /* LAYOUT */
 @use "./layout/header";
 @use "./layout/hero";
 @use "./layout/footer";
 @use "./layout/steps";
-/* BASE */
-@use "./base/layout";
-@use "./base/reset";
-@use "./base/typography";
-/* COMPONENTS */
-@use "./components/buttons";
-@use "./components/location-bar";
-@use "./components/restaurants";
+/* PAGES */
+@use "./pages/restaurant";

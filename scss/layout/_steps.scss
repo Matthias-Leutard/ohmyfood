@@ -25,6 +25,7 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  padding-left: 7px;
 
   @include m.respond-to(desktop) {
     flex-direction: row;
