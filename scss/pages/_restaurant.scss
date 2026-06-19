@@ -5,6 +5,36 @@
 //   background: v.$color-white;
 // }
 
+/* ANIMATION MENU */
+@keyframes menuAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu {
+  opacity: 0;
+  animation: menuAppear 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.menu:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+
+.menu:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+
+.menu:nth-of-type(3) {
+  animation-delay: 1.3s;
+}
+
 .restaurant {
   background: v.$color-white;
 
@@ -71,16 +101,70 @@
 
 .menu-card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 15px;
-  margin-bottom: 12px;
-
+  align-items: stretch;
+  overflow: hidden;
   background: v.$color-white;
   border-radius: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
-  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  &__content {
+    padding: 13px 15px;
+    flex: 1;
+    min-width: 0;
+
+    h4 {
+      margin: 0 0 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      // text-overflow: ellipsis; À voir si besoin
+    }
+
+    p {
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    font-weight: v.$font-weight-bold;
+  }
+
+  &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: v.$color-tertiary;
+    transition: width 0.4s ease;
+
+    i {
+      color: v.$color-white;
+      font-size: 20px;
+      transform: rotate(-180deg);
+      transition: transform 0.4s ease;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .menu-card__check {
+      width: 59px;
+    }
+
+    .menu-card__check i {
+      transform: rotate(0deg);
+    }
+  }
 }
 
 .footer-container {

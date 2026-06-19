@@ -9,7 +9,7 @@
   align-items: center;
   background-color: v.$color-white;
   z-index: 9;
-  animation: fadeOutLoader 1s forwards;
+  animation: fadeOutLoader 3s forwards;
 }
 
 .loader__circle {
@@ -18,7 +18,7 @@
   border: 5px solid v.$color-grey-light;
   border-top: 5px solid v.$color-primary;
   border-radius: 50%;
-  animation: spin 0.7s linear infinite;
+  animation: spin 3s linear infinite;
   margin-bottom: 20px;
 }
 
